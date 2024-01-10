@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+::selection {
+    background-color: rgba(93, 1, 1, 0.542);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(1, 12, 77);
+}
+/* #aed2f4 */
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+    margin-top: 0.5em;
+    color: rgb(255, 255, 255);
+}
+
+#forPlayer {
+    color: rgb(255, 255, 255);
+    background-color: #75838f;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 0.5em;
+}
+
+.forFirstDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.forSectDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 16em;
+    /* Updated fixed height */
+    width: 30em;
+}
+
+.forBtn {
+    display: block;
+    color: rgb(1, 12, 77);
+    text-align: center;
+
+    height: 2em;
+    /* Set the height of the button to 4em */
+    width: 2em;
+    /* Set the width of the button to 4em */
+    align-self: center;
+    /* Center the button vertically */
+    margin: 0.1em;
+    border: 0.2em solid #f0f8ff;
+    border-radius: 0.8em;
+    font-size: 4em;
+    background-color: rgb(201, 201, 201);
+    transform: color 0.5s;
+
+}
+
+.forBtn:hover {
+    background-color: rgb(152, 158, 199);
+    color: rgb(1, 12, 77);
+}
+
+.winning-box {
+    background-color: rgb(1, 12, 77);
+    color: rgb(161, 160, 160);
+}
+
+.third-div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 13em;
+    margin-bottom: 4em;
+}
+
+.newGame {
+    background-color: rgb(152, 158, 199);
+    color: white;
+    outline: none;
+    border-radius: 0.4em;
+    border: 0.2 solid gray;
+    font-size: 2em;
+    padding: 0.1em 0.3em;
+    transition: color 0.5s ease-in-out;
+}
+
+.newGame:hover {
+    background-color: rgb(99, 84, 132);
+}
+
+@media screen and (max-width: 425px) {
+    .forSectDiv {
+        width: 24em;
+    }
+
+    .forBtn {
+        width: 1.5em;
+        height: 1.5em;
+        border: 0.1em solid #f0f8ff;
+        border-radius: 0.5em;
+    }
+    .third-div{margin-top: 8em;}
+}  
+
+@media screen and (max-width: 361px) {
+    .forSectDiv {
+        width: 24em;
+    }
+
+    .forBtn {
+        width: 1.3em;
+        height: 1.3em;
+        border: 0.1em solid #f0f8ff;
+        border-radius: 0.5em;
+    }
+    h1 {
+        font-size: 3em;}
+        #forPlayer{font-size: 1.6em;}
+        .third-div{margin-top: 4em;}
+        .newGame{font-size: 1.5em;}
+}  
+
+@media screen and (max-width: 295px) {
+    .forSectDiv {
+        width: 26em;
+    }
+
+    .forBtn {
+        width: 2.1em;
+        height: 2.1em;
+        /* border: 0.1em solid #f0f8ff;
+        border-radius: 0.5em; */
+        /* margin: 0.02em; */
+        font-size: 2em;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    .third-div{margin-top: 3em;}
+    .newGame{font-size: 1.2em;}
+    
+}  
